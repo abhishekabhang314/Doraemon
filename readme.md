@@ -41,10 +41,13 @@ Doraemon-FanPage/
 │── README.md
 ```
 
+## 🚀 Live Demo
+Check out the live version of the website here: [Doraemon Fan Page](https://abhishekabhang314.github.io/Doraemon/)
+
 ## 🚀 How to Run
 1. **Clone the repository**
    ```sh
-   git clone https://github.com/yourusername/Doraemon-FanPage.git
+   git clone https://github.com/abhishekabhang314/Doraemon
    ```
 2. **Open the `index.html` file in a browser**
 
