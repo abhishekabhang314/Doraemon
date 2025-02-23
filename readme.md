@@ -10,34 +10,28 @@ This is a **Doraemon Fan Page** website created using **HTML, CSS, JavaScript, a
 - **Interactive UI**: Engaging design with a modern look.
 
 ## 🛠️ Technologies Used
-- **HTML5** - Structure of the website
-- **CSS3** - Styling and layout
-- **JavaScript** - Dynamic interactions and animations
-- **Bootstrap** - Responsive framework for UI design
+| `HTML` | Structure of the website |
+| `CSS` | Styling and layout |
+| `JavaScript` | Dynamic interactions and animations |
+| `Bootstrap` | Responsive framework for UI design |
 
-## 📷 Image Sources
-Here are some image links used in the website:
-- Doraemon: [Link](https://upload.wikimedia.org/wikipedia/en/6/69/Doraemon_character.png)
-- Nobita: [Link](https://upload.wikimedia.org/wikipedia/en/thumb/d/d5/Nobita_Nobi.png/200px-Nobita_Nobi.png)
-- Shizuka: [Link](https://upload.wikimedia.org/wikipedia/en/thumb/a/a0/Shizuka_Minamoto.png/200px-Shizuka_Minamoto.png)
-- Gian: [Link](https://upload.wikimedia.org/wikipedia/en/thumb/4/44/Takeshi_Gouda.png/200px-Takeshi_Gouda.png)
-- Suneo: [Link](https://upload.wikimedia.org/wikipedia/en/thumb/5/50/Suneo_Honekawa.png/200px-Suneo_Honekawa.png)
+### Home Page
+![Alt text](assets/img/hero_bg.jpg "Home Page")
 
 ## 📂 Project Structure
 ```
-Doraemon-FanPage/
+Doraemon/
 │── index.html
-│── style.css
-│── script.js
-│── images/
-│   ├── doreamon.png
-│   ├── nobita.png
-│   ├── shizuka.png
-│   ├── gian.png
-│   ├── suneo.png
 │── assets/
-│   ├── bootstrap.min.css
-│   ├── animations.js
+│   ├── characters/
+│   │   ├── "webpages of characters"
+│   ├── css/
+│   │   ├── "css files"
+│   ├── img
+│   ├── js/
+│   │   ├── "javascript files"
+│   ├── vendor
+│   ├── video
 │── README.md
 ```
 
@@ -51,8 +45,8 @@ Check out the live version of the website here: [Doraemon Fan Page](https://abhi
    ```
 2. **Open the `index.html` file in a browser**
 
-## 📬 Contact
-For any feedback or suggestions, feel free to reach out!
+> [!NOTE]
+> This website is not complete wet.
 
 ---
 ✨ *Enjoy exploring the world of Doraemon!* ✨
