@@ -10,13 +10,12 @@ This is a **Doraemon Fan Page** website created using **HTML, CSS, JavaScript, a
 - **Interactive UI**: Engaging design with a modern look.
 
 ## 🛠️ Technologies Used
+| Technology | Use |
+| --- | --- |
 | `HTML` | Structure of the website |
 | `CSS` | Styling and layout |
 | `JavaScript` | Dynamic interactions and animations |
 | `Bootstrap` | Responsive framework for UI design |
-
-### Home Page
-![Alt text](assets/img/hero_bg.jpg "Home Page")
 
 ## 📂 Project Structure
 ```
