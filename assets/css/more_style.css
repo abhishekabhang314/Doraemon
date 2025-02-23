@@ -1,0 +1,279 @@
+/*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
+#hero {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    padding: 0;
+}
+
+#hero .carousel-item {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#hero .carousel-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+
+#hero .carousel-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+#hero .carousel-content {
+    text-align: center;
+}
+
+#hero .img {
+    width: 100%;
+}
+
+#hero .img img {
+    width: 60%;
+}
+
+#hero p {
+    width: 80%;
+    -webkit-animation-delay: 0.4s;
+    animation-delay: 0.4s;
+    margin: 0 auto 30px auto;
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+}
+
+#hero .carousel-inner .carousel-item {
+    transition-property: opacity;
+    background-position: center top;
+}
+
+#hero .carousel-inner .carousel-item,
+#hero .carousel-inner .active.carousel-item-left,
+#hero .carousel-inner .active.carousel-item-right {
+    opacity: 0;
+}
+
+#hero .carousel-inner .active,
+#hero .carousel-inner .carousel-item-next.carousel-item-left,
+#hero .carousel-inner .carousel-item-prev.carousel-item-right {
+    opacity: 1;
+    transition: 0.5s;
+}
+
+#hero .carousel-inner .carousel-item-next,
+#hero .carousel-inner .carousel-item-prev,
+#hero .carousel-inner .active.carousel-item-left,
+#hero .carousel-inner .active.carousel-item-right {
+    left: 0;
+    transform: translate3d(0, 0, 0);
+}
+
+#hero .carousel-control-prev,
+#hero .carousel-control-next {
+    width: 10%;
+    opacity: 1;
+}
+
+#hero .carousel-control-next-icon,
+#hero .carousel-control-prev-icon {
+    background: none;
+    font-size: 36px;
+    line-height: 1;
+    width: auto;
+    height: auto;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50px;
+    padding: 10px;
+    transition: 0.3s;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+#hero .carousel-control-next-icon:hover,
+#hero .carousel-control-prev-icon:hover {
+    background: rgba(255, 255, 255, 0.2);
+    color: rgba(255, 255, 255, 0.8);
+}
+
+#hero .carousel-indicators li {
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    #hero .img img {
+        width: 90%;
+    }
+}
+
+@media (max-width: 425px) {
+    #hero {
+        background: url(../img/hero_bg2.jpg);
+        width: 100%;
+        height: 100vh;
+        background-position: bottom;
+        background-repeat: no-repeat;
+        background-size: cover;
+        overflow: hidden;
+        padding: 0;
+    }
+}
+
+@media (min-width: 1024px) {
+    #hero p {
+        width: 50%;
+    }
+
+    #hero .carousel-control-prev,
+    #hero .carousel-control-next {
+        width: 5%;
+    }
+}
+
+.fullscreen-bg {
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+.fullscreen-bg__video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%
+}
+
+@media(min-aspect-ratio:16/9) {
+    .fullscreen-bg__video {
+        height: 300%;
+        top: -100%
+    }
+}
+
+@media(max-aspect-ratio:16/9) {
+    .fullscreen-bg__video {
+        width: 300%;
+        left: -100%
+    }
+}
+
+@media(max-width:767px) {
+    .fullscreen-bg {
+        background: url('img/hero-bg.jpg') center center / cover no-repeat
+    }
+
+    .fullscreen-bg__video {
+        display: none
+    }
+}
+
+/*--------------------------------------------------------------
+# My Services
+--------------------------------------------------------------*/
+.services {
+}
+
+.services .sub-title h3 {
+    font-size: 40px;
+    background: -webkit-linear-gradient(rgb(7, 150, 220), rgb(0, 97, 165));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: lighter;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 50px;
+}
+
+.services .sub-title h4 {
+    font-size: 28px;
+    color: #fff;
+    font-weight: lighter;
+    font-family: Arial, Helvetica, sans-serif;
+    border-bottom: 1px solid #fff;
+    margin-top: 20px;
+}
+
+.services p {
+    font-size: 20px;
+    color: #fff;
+    font-weight: normal;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.services .image {
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.services img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/*--------------------------------------------------------------
+# My Services-2
+--------------------------------------------------------------*/
+.services-2 {
+}
+
+.services-2 .sub-title h3 {
+    font-size: 40px;
+    background: -webkit-linear-gradient(rgb(7, 150, 220), rgb(0, 97, 165));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: lighter;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 50px;
+    border-bottom: 1px solid transparent;
+    border-image: linear-gradient(to bottom right, rgb(7, 150, 220), rgb(0, 97, 165));
+    border-image-slice: 1;
+}
+
+.services-2 .sub-title h4 {
+    font-size: 28px;
+    color: #000;
+    font-weight: lighter;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 20px;
+}
+
+.services-2 p {
+    font-size: 20px;
+    color: #000;
+    font-weight: normal;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.services-2 .image {
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.services-2 img {
+    width: 100%;
+    border-radius: 10px;
+}

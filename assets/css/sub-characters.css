@@ -1,0 +1,856 @@
+/*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
+#hero {
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+    background-size: cover;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-attachment: fixed;
+}
+
+#hero:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+#hero .hero-container {
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 15px;
+}
+
+#hero .general h1 {
+    font-size: 80px;
+    background: -webkit-linear-gradient(rgb(7, 150, 220), rgb(0, 97, 165));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#hero .nobita h1 {
+    font-size: 80px;
+    background: -webkit-linear-gradient(#ff0, #ffbf00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#hero .shizuka h1 {
+    font-size: 80px;
+    background: -webkit-linear-gradient(#ff66ab, rgb(255, 0, 128));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#hero .suneo h1 {
+    font-size: 80px;
+    background: -webkit-linear-gradient(#4aff4a, #00c200);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#hero .gian h1 {
+    font-size: 80px;
+    background: -webkit-linear-gradient(rgb(255,147,44), #ff5e00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#hero h3 {
+    color: rgb(19, 19, 19);
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+@media (min-width: 1024px) {
+    #hero {}
+}
+
+@media (max-width: 575px) {
+    #hero .general h1,
+    #hero .nobita h1,
+    #hero .shizuka h1,
+    #hero .suneo h1,
+    #hero .gian h1 {
+        font-size: 50px;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+}
+
+/*--------------------------------------------------------------
+# About Me
+--------------------------------------------------------------*/
+.about {
+    background-color: #fff;
+}
+
+.about .content h2 {
+    font-size: 18px;
+}
+
+.about .content h2 strong {
+    font-size: 18px;
+}
+
+.about .content-nobita h2 strong {
+    background: -webkit-linear-gradient(#ff0, #ffbf00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.about .content-general h2 strong {
+    background: -webkit-linear-gradient(rgb(7, 150, 220), rgb(0, 97, 165));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.about .content-shizuka h2 strong {
+    background: -webkit-linear-gradient(#ff66ab, rgb(255, 0, 128));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.about .content-suneo h2 strong {
+    background: -webkit-linear-gradient(#4aff4a, #00c200);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.about .content-gian h2 strong {
+    background: -webkit-linear-gradient(rgb(255,147,44), #ff5e00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.about .content ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.about .content ul li {
+    padding-bottom: 10px;
+}
+
+.about .content ul i {
+    font-size: 20px;
+    padding-right: 2px;
+}
+
+.about .content-general ul i {
+    background: -webkit-linear-gradient(rgb(7, 150, 220), rgb(0, 97, 165));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.about .content-nobita ul i {
+    background: -webkit-linear-gradient(#ff0, #ffbf00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.about .content-shizuka ul i {
+    background: -webkit-linear-gradient(#ff66ab, rgb(255, 0, 128));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.about .content-suneo ul i {
+    background: -webkit-linear-gradient(#4aff4a, #00c200);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.about .content-gian ul i {
+    background: -webkit-linear-gradient(rgb(255,147,44), #ff5e00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/*--------------------------------------------------------------
+# Specials
+--------------------------------------------------------------*/
+.specials {
+    overflow: hidden
+}
+
+.specials h3 {
+    color: rgb(63, 63, 63);
+    font-size: 23px;
+    font-weight: lighter;
+}
+
+.specials .nav-tabs {
+    border: 0;
+}
+
+.specials .nav-link {
+    border: 0;
+    padding: 12px 0 12px 15px;
+    transition: 0.3s;
+    color: #000;
+    border-radius: 0;
+    border-right: 4px solid #fff;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.specials .general .nav-link:hover {
+    background: -webkit-linear-gradient(rgb(7, 150, 220), rgb(0, 97, 165));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.specials .general .nav-link.active {
+    background: -webkit-linear-gradient(rgb(7, 150, 220), rgb(0, 97, 165));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border: 4px solid transparent;
+    border-image: linear-gradient(to bottom right, rgb(7, 150, 220), rgb(0, 97, 165));
+    border-image-slice: 1;
+    border-left: 0;
+    border-top: 0;
+    border-bottom: 0;
+}
+
+.specials .nobita .nav-link:hover {
+    background: -webkit-linear-gradient(#ff0, #ffbf00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.specials .nobita .nav-link.active {
+    background: -webkit-linear-gradient(#ff0, #ffbf00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border: 4px solid transparent;
+    border-image: linear-gradient(to bottom right, #ff0, #ffbf00);
+    border-image-slice: 1;
+    border-left: 0;
+    border-top: 0;
+    border-bottom: 0;
+}
+
+.specials .shizuka .nav-link:hover {
+    background: -webkit-linear-gradient(#ff66ab, rgb(255, 0, 128));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.specials .shizuka .nav-link.active {
+    background: -webkit-linear-gradient(#ff66ab, rgb(255, 0, 128));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border: 4px solid transparent;
+    border-image: linear-gradient(to bottom right, #ff66ab, rgb(255, 0, 128));
+    border-image-slice: 1;
+    border-left: 0;
+    border-top: 0;
+    border-bottom: 0;
+}
+
+.specials .suneo .nav-link:hover {
+    background: -webkit-linear-gradient(#4aff4a, #00c200);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.specials .suneo .nav-link.active {
+    background: -webkit-linear-gradient(#4aff4a, #00c200);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border: 4px solid transparent;
+    border-image: linear-gradient(to bottom right, #4aff4a, #00c200);
+    border-image-slice: 1;
+    border-left: 0;
+    border-top: 0;
+    border-bottom: 0;
+}
+
+.specials .gian .nav-link:hover {
+    background: -webkit-linear-gradient(rgb(255,147,44), #ff5e00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.specials .gian .nav-link.active {
+    background: -webkit-linear-gradient(rgb(255,147,44), #ff5e00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border: 4px solid transparent;
+    border-image: linear-gradient(to bottom right, rgb(255,147,44), #ff5e00);
+    border-image-slice: 1;
+    border-left: 0;
+    border-top: 0;
+    border-bottom: 0;
+}
+
+.specials .tab-pane.active {
+    -webkit-animation: fadeIn 0.5s ease-out;
+    animation: fadeIn 0.5s ease-out;
+}
+
+.specials .details p {
+    color: #1f1f1f;
+    font-size: 17px;
+}
+
+.specials .details p:last-child {
+    margin-bottom: 0;
+}
+
+.specials .img-fluid {
+    border-radius: 10px;
+    width: 100%;
+}
+
+@media (max-width: 992px) {
+    .specials .nav-link {
+        border: 0;
+        padding: 15px;
+    }
+
+    .specials .nav-link.active {
+        background: -webkit-linear-gradient(rgb(7, 150, 220), rgb(0, 97, 165));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        border: 4px solid transparent;
+        border-image: linear-gradient(to bottom right, rgb(7, 150, 220), rgb(0, 97, 165));
+        border-image-slice: 1;
+        border-left: 0;
+        border-top: 0;
+        border-bottom: 0;
+    }
+    
+    .specials .nobita .nav-link.active {
+        background: -webkit-linear-gradient(#ff0, #ffbf00);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        border: 4px solid transparent;
+        border-image: linear-gradient(to bottom right, #ff0, #ffbf00);
+        border-image-slice: 1;
+        border-left: 0;
+        border-top: 0;
+        border-bottom: 0;
+    }
+    
+    .specials .shizuka .nav-link.active {
+        background: -webkit-linear-gradient(#ff66ab, rgb(255, 0, 128));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        border: 4px solid transparent;
+        border-image: linear-gradient(to bottom right, #ff66ab, rgb(255, 0, 128));
+        border-image-slice: 1;
+        border-left: 0;
+        border-top: 0;
+        border-bottom: 0;
+    }
+    
+    .specials .suneo .nav-link.active {
+        background: -webkit-linear-gradient(#4aff4a, #00c200);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        border: 4px solid transparent;
+        border-image: linear-gradient(to bottom right, #4aff4a, #00c200);
+        border-image-slice: 1;
+        border-left: 0;
+        border-top: 0;
+        border-bottom: 0;
+    }
+
+    .specials .gian .nav-link.active {
+        background: -webkit-linear-gradient(rgb(255,147,44), #ff5e00);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        border: 4px solid transparent;
+        border-image: linear-gradient(to bottom right, rgb(255,147,44), #ff5e00);
+        border-image-slice: 1;
+        border-left: 0;
+        border-top: 0;
+        border-bottom: 0;
+    }
+}
+
+/*--------------------------------------------------------------
+# My Services
+--------------------------------------------------------------*/
+.services {
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+.services p {
+    font-size: 18px;
+    color: #3a3a3a;
+    font-weight: normal;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.services .general h3 {
+    font-size: 30px;
+    background: -webkit-linear-gradient(rgb(7, 150, 220), rgb(0, 97, 165));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: lighter;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 50px;
+}
+
+.services .discription-general {
+    padding: 20px;
+    border: 1px solid rgb(0, 97, 165);
+    border-radius: 10px;
+    margin: 50px;
+}
+
+.services .discription-general h4 {
+    color: #000;
+    font-size: 20px;
+}
+
+.services .discription-general .from {
+    text-align: right;
+}
+
+.services .discription-general .from h5 {
+    color: rgb(37, 37, 37);
+    font-size: 15px;
+}
+
+.services .nobita h3 {
+    font-size: 30px;
+    background: -webkit-linear-gradient(#ff0, #ffbf00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: lighter;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 50px;
+}
+
+.services .discription-nobita {
+    padding: 20px;
+    border: 1px solid #ffbf00;
+    border-radius: 10px;
+    margin: 50px;
+}
+
+.services .discription-nobita h4 {
+    color: #000;
+    font-size: 20px;
+}
+
+.services .discription-nobita .from {
+    text-align: right;
+}
+
+.services .discription-nobita .from h5 {
+    color: rgb(37, 37, 37);
+    font-size: 15px;
+}
+
+.services .shizuka h3 {
+    font-size: 30px;
+    background: -webkit-linear-gradient(#ff66ab, rgb(255, 0, 128));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: lighter;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 50px;
+}
+
+.services .discription-shizuka {
+    padding: 20px;
+    border: 1px solid rgb(255, 0, 128);
+    border-radius: 10px;
+    margin: 50px;
+}
+
+.services .discription-shizuka h4 {
+    color: #000;
+    font-size: 20px;
+}
+
+.services .discription-shizuka .from {
+    text-align: right;
+}
+
+.services .discription-shizuka .from h5 {
+    color: rgb(37, 37, 37);
+    font-size: 15px;
+}
+
+.services .suneo h3 {
+    font-size: 30px;
+    background: -webkit-linear-gradient(#4aff4a, #00c200);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: lighter;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 50px;
+}
+
+.services .discription-suneo {
+    padding: 20px;
+    border: 1px solid #00c200;
+    border-radius: 10px;
+    margin: 50px;
+}
+
+.services .discription-suneo h4 {
+    color: #000;
+    font-size: 20px;
+}
+
+.services .discription-suneo .from {
+    text-align: right;
+}
+
+.services .discription-suneo .from h5 {
+    color: rgb(37, 37, 37);
+    font-size: 15px;
+}
+
+.services .gian h3 {
+    font-size: 30px;
+    background: -webkit-linear-gradient(rgb(255,147,44), #ff5e00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: lighter;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 50px;
+}
+
+.services .discription-gian {
+    padding: 20px;
+    border: 1px solid #ff5e00;
+    border-radius: 10px;
+    margin: 50px;
+}
+
+.services .discription-gian h4 {
+    color: #000;
+    font-size: 20px;
+}
+
+.services .discription-gian .from {
+    text-align: right;
+}
+
+.services .discription-gian .from h5 {
+    color: rgb(37, 37, 37);
+    font-size: 15px;
+}
+
+.services .image {
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.services img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+@media (max-width: 425px) {
+    .services .discription-general {
+        padding: 10px;
+        border: 1px solid rgb(0, 97, 165);
+        border-radius: 10px;
+        margin: 20px;
+    }
+    
+    .services .discription-nobita {
+        padding: 10px;
+        border: 1px solid #ffbf00;
+        border-radius: 10px;
+        margin: 20px;
+    }
+    
+    .services .discription-shizuka {
+        padding: 10px;
+        border: 1px solid rgb(255, 0, 128);
+        border-radius: 10px;
+        margin: 20px;
+    }
+    
+    .services .discription-suneo {
+        padding: 10px;
+        border: 1px solid #00c200;
+        border-radius: 10px;
+        margin: 20px;
+    }
+    
+    .services .discription-gian {
+        padding: 10px;
+        border: 1px solid #ff5e00;
+        border-radius: 10px;
+        margin: 20px; 
+    }
+}
+
+/*--------------------------------------------------------------
+# Gallery
+--------------------------------------------------------------*/
+.gallery-non-enteractive {}
+
+.gallery-non-enteractive .general .gallery-item {
+    overflow: hidden;
+    padding: 5px;
+    border: 1px solid rgb(0, 97, 165);
+    background: linear-gradient(to bottom right, rgba(7, 150, 220, 0.3), rgba(0, 97, 165, 0.3));
+    border-radius: 10px;
+    margin: 5px;
+    height: 300px;
+    align-items: center;
+}
+
+.gallery-non-enteractive .nobita .gallery-item {
+    overflow: hidden;
+    padding: 5px;
+    border: 1px solid #ffbf00;
+    background: linear-gradient(to bottom right, rgba(255, 255, 0, 0.4), rgba(255, 191, 0, 0.4));
+    border-radius: 10px;
+    margin: 5px;
+    height: 300px;
+    align-items: center;
+}
+
+.gallery-non-enteractive .shizuka .gallery-item {
+    overflow: hidden;
+    padding: 5px;
+    border: 1px solid rgb(255, 0, 128);
+    background: linear-gradient(to bottom right, rgba(255, 102, 171, 0.4), rgba(255, 0, 128, 0.4));
+    border-radius: 10px;
+    margin: 5px;
+    height: 300px;
+    align-items: center;
+}
+
+.gallery-non-enteractive .suneo .gallery-item {
+    overflow: hidden;
+    padding: 5px;
+    border: 1px solid #00c200;
+    background: linear-gradient(to bottom right, rgba(74, 255, 74, 0.5), rgba(0, 194, 0, 0.5));
+    border-radius: 10px;
+    margin: 5px;
+    height: 300px;
+    align-items: center;
+}
+
+.gallery-non-enteractive .gian .gallery-item {
+    overflow: hidden;
+    padding: 5px;
+    border: 1px solid #ff5e00;
+    background: linear-gradient(to bottom right, rgba(255,147,44,0.5), rgba(255, 94, 0,0.5));
+    border-radius: 10px;
+    margin: 5px;
+    height: 300px;
+    align-items: center;
+}
+
+.gallery-non-enteractive .gallery-item img {
+    height: 100%;
+}
+
+/*--------------------------------------------------------------
+# Gallery
+--------------------------------------------------------------*/
+.gallery {}
+
+.gallery p a {
+    color: #909090;
+    transition: ease 0.4s;
+}
+
+.gallery p a:hover {
+    color: #000;
+}
+
+.gallery .gallery-item {
+    overflow: hidden;
+    border: 3px solid transparent;
+    border-radius: 15px;
+}
+
+.gallery .gallery-item img {
+    transition: all ease-in-out 0.4s;
+}
+
+.gallery .gallery-item:hover img {
+    transform: scale(1.1);
+}
+
+/*--------------------------------------------------------------
+# slide Section
+--------------------------------------------------------------*/
+#slide {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    padding: 0;
+}
+
+.slide .section-title h2 {
+    color: #fff;
+    font-size: 40px;
+}
+
+.slide img {
+    border-radius: 10px;
+}
+
+#slide .carousel-item {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#slide .carousel-item::before {
+    content: '';
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+
+#slide .carousel-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.slide .carousel-content {
+    text-align: center;
+}
+
+#slide .carousel-inner .carousel-item {
+    transition-property: opacity;
+    background-position: center top;
+}
+
+#slide .carousel-inner .carousel-item,
+#slide .carousel-inner .active.carousel-item-left,
+#slide .carousel-inner .active.carousel-item-right {
+    opacity: 0;
+}
+
+#slide .carousel-inner .active,
+#slide .carousel-inner .carousel-item-next.carousel-item-left,
+#slide .carousel-inner .carousel-item-prev.carousel-item-right {
+    opacity: 1;
+    transition: 0.5s;
+}
+
+#slide .carousel-inner .carousel-item-next,
+#slide .carousel-inner .carousel-item-prev,
+#slide .carousel-inner .active.carousel-item-left,
+#slide .carousel-inner .active.carousel-item-right {
+    left: 0;
+    transform: translate3d(0, 0, 0);
+}
+
+#slide .carousel-control-prev,
+#slide .carousel-control-next {
+    width: 10%;
+    opacity: 1;
+}
+
+.slide .carousel-control-next-icon,
+.slide .carousel-control-prev-icon {
+    background: none;
+    font-size: 36px;
+    line-height: 1;
+    width: auto;
+    height: auto;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    padding: 10px;
+    transition: 0.3s;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.slide .carousel-control-next-icon:hover,
+.slide .carousel-control-prev-icon:hover {
+    background: rgba(255, 255, 255, 0.2);
+    color: rgb(255, 255, 255);
+}
+
+#slide .carousel-indicators li {
+    cursor: pointer;
+}
+
+#slide .btn-menu,
+#slide .btn-book {
+    font-weight: 600;
+    font-size: 13px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 12px 30px;
+    border-radius: 50px;
+    transition: 0.5s;
+    line-height: 1;
+    margin: 0 10px;
+    -webkit-animation-delay: 0.8s;
+    animation-delay: 0.8s;
+    color: #fff;
+    border: 2px solid #ffb03b;
+}
+
+@media (max-width: 768px) {
+    #slide h2 {
+        font-size: 28px;
+    }
+}
+
+@media (min-width: 1024px) {
+    #slide p {
+        width: 50%;
+    }
+
+    #slide .carousel-control-prev,
+    #slide .carousel-control-next {
+        width: 5%;
+    }
+}

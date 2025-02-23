@@ -1,0 +1,310 @@
+/*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
+#hero {
+  width: 100%;
+  height: 80vh;
+  overflow: hidden;
+  padding: 60px;
+  background: url(../img/Gallery/gadgets/bg.png);
+  background-repeat: repeat;
+  background-position: center;
+  background-size: contain;
+  background-attachment: fixed;
+}
+
+#hero .carousel-item {
+  width: 100%;
+  height: 60vh;
+  background: url(../img/Gallery/gadgets/hero_bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+  border: 3px solid rgb(0, 97, 165);
+}
+
+#hero .carousel-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+#hero .carousel-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+#hero .carousel-content {
+  text-align: center;
+}
+
+#hero h2 {
+  margin-bottom: 3px;
+  font-size: 100px;
+  font-weight: 600;
+  background: -webkit-linear-gradient(rgb(7, 150, 220), rgb(0, 97, 165));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#hero p {
+  width: 80%;
+  -webkit-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+  margin: 0 auto 30px auto;
+  color: rgb(0, 0, 0);
+  font-size: 16px;
+}
+
+#hero .carousel-inner .carousel-item {
+  transition-property: opacity;
+  background-position: center top;
+}
+
+#hero .carousel-inner .carousel-item,
+#hero .carousel-inner .active.carousel-item-left,
+#hero .carousel-inner .active.carousel-item-right {
+  opacity: 0;
+}
+
+#hero .carousel-inner .active,
+#hero .carousel-inner .carousel-item-next.carousel-item-left,
+#hero .carousel-inner .carousel-item-prev.carousel-item-right {
+  opacity: 1;
+  transition: 0.5s;
+}
+
+@media (max-width: 768px) {
+  #hero h2 {
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 425px) {
+  #hero {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    padding: 60px 10px;
+  }
+
+  #hero .carousel-item {
+    width: 100%;
+    height: 80vh;
+    background: url(../img/Gallery/gadgets/hero_bg-2.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    border: 3px solid rgb(0, 97, 165);
+  }
+}
+
+@media (min-width: 1024px) {
+  #hero p {
+    width: 50%;
+  }
+}
+
+/*--------------------------------------------------------------
+# Team
+--------------------------------------------------------------*/
+.team {
+  border: 0;
+  background: url(../img/Gallery/gadgets/bg.png);
+  background-repeat: repeat;
+  background-position: center;
+  background-size: contain;
+  background-attachment: fixed;
+  padding: 60px 0;
+} 
+
+.team .sub-title h3 {
+  font-size: 90px;
+  color: #fff;
+  font-weight: bold;
+  text-shadow: 0 1px 3px rgb(0 0 0 / 55%);
+  font-family: Futura,Trebuchet MS,Arial,sans-serif;
+}
+
+.team .member {
+  padding: 10px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+.team .member .member-img {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.team .member .member-img img {
+  width: 100%;
+}
+
+.team .member .member-info {
+  padding: 25px 15px;
+  text-align: center;
+}
+
+.team .member .member-info a {
+  display: inline-block;
+  position: relative;
+  color: #005da2;
+}
+
+.team .member .member-info a:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #0087ca;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.team .member .member-info a:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.team .member .member-info span {
+  display: block;
+  font-size: 14px;
+  font-weight: 400;
+  color: #818181;
+}
+
+.team .member .member-info p {
+  font-style: italic;
+  font-size: 14px;
+  line-height: 26px;
+  color: #777777;
+}
+
+.team .member:hover .social {
+  opacity: 1;
+  bottom: 15px;
+}
+
+/*--------------------------------------------------------------
+# divider border
+--------------------------------------------------------------*/
+.divider-border {
+  background: url(../img/Gallery/gadgets/bg.png);
+  background-repeat: repeat;
+  background-position: center;
+  background-size: contain;
+  background-attachment: fixed;
+}
+
+.divider-border .main-border {
+  box-shadow: 0 1px 3px rgb(0 0 0 / 33%);
+  border: 10px solid #fff;
+  border-radius: 10px;
+}
+
+/*--------------------------------------------------------------
+# Frequently Asked Questions
+--------------------------------------------------------------*/
+.faq {
+  border: 0;
+  background: url(../img/Gallery/gadgets/bg.png);
+  background-repeat: repeat;
+  background-position: center;
+  background-size: contain;
+  background-attachment: fixed;
+}
+
+.faq .section-title-other h2 {
+  color: #fff;
+}
+
+.faq .faq-list {
+  padding: 10px;
+}
+
+.faq .faq-list ul {
+  padding: 0;
+  list-style: none;
+  border-radius: 10px;
+  background: #fff;
+}
+
+.faq .faq-list li+li {
+  margin-top: 15px;
+}
+
+.faq .faq-list li {
+  padding: 20px;
+  border-radius: 10px;
+  position: relative;
+  border: 1px solid rgb(0, 97, 165);
+  background: transparent;
+}
+
+.faq .faq-list a {
+  display: block;
+  position: relative;
+}
+
+.faq .faq-list a h4 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  line-height: 24px;
+  font-weight: lighter;
+  transition: 0.3s ease;
+  color: rgb(7, 150, 220);
+}
+
+.faq .faq-list a:hover>h4 {
+  color: rgb(0, 97, 165);
+}
+
+.faq .faq-list img {
+  width: 100%;
+  padding: 10px;
+}
+
+.faq .faq-list p {
+  margin-bottom: 0;
+  padding: 10px 0 0 0;
+}
+
+.faq .faq-list .more {
+  padding-top: 5px;
+}
+
+.faq .faq-list .more a {
+  color: #fff;
+  font-weight: bold;
+  font-size: 17px;
+  transition: 0.3s ease;
+}
+
+.faq .faq-list .more a:hover {
+  color: rgb(0, 97, 165);
+}
+
+@media (max-width: 1200px) {
+  .faq .faq-list {
+    padding: 10px;
+  }
+}
